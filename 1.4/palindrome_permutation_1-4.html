@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Permutation 1.4</title>
+    <link rel="stylesheet" href="../themes/prism.css">
+    <link rel="stylesheet" href="../themes/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <body>
+        <section class="content">
+            <h1>Palindrome Permutaion 1.4</h1>
+            <div class="problem-definition">
+                <p><b><i>1.4 Palindrome Permutation:</i></b> Given a string, write a function to check if it is a permutation of a palin
+                drome. A palindrome is a word or phrase that is the same forwards and backwards. A permutation
+                is a rearrangement of letters. The palindrome does not need to be limited to just dictionary words.
+                <br>
+                <br>
+                <b>EXAMPLE</b>
+                <br>
+                Input: Tact Coa
+                <br>
+                Output: True (permutations: "taco cat", "atco eta", etc.)
+                <br>
+                <i>Chapter 1 | Arrays and Strings, p.91</i>
+                </p>
+            </div>
+            <div class="solution-1">
+                <h3><i>Solution 1</i></h3>
+                <pre><code class="language-cpp" data-src="palindrome_permutation-1.cpp"></code></pre>
+                <p>
+                    Consider palindromes:
+                    <br>
+                    <i>'aba'</i>
+                    <br>
+                    <i>'aa'</i>
+                    <br>
+                    There are two possible cases of palindromes: <i>even</i> and <i>odd</i> length.
+                    <br>
+                    The idea here is to count the number of letters and check if the 
+                    
+                </p>
+            </div>
+            <div class="solution-2">
+                <h3><i>Solution 2</i></h3>
+                <pre><code class="language-cpp" data-src="palindrome_permutation-2.cpp"></code></pre>
+                
+            </div>
+            <div class="solution-3">
+                <h3><i>Solution 3</i></h3>
+                <pre><code class="language-cpp" data-src="palindrome_permutation-3.cpp"></code></pre>
+               
+            </div>
+        </section>
+    </body>
+    <footer>
+
+    </footer>
+
+    <script src="../themes/prism.js"></script>
+    <script>
+        document.querySelectorAll("code[data-src]").forEach(async block => {
+            let src = block.getAttribute("data-src");
+            let response = await fetch(src);
+            if (response.ok) {
+                block.textContent = await response.text();
+                Prism.highlightElement(block);
+            }
+        });
+    </script>
+
+
+</body>
+</html>
